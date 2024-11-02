@@ -124,8 +124,10 @@ PI8 = Pin((__chip_num, 264))
 TWI1_SDA = PI8
 PI9 = Pin((__chip_num, 265))
 UART3_TX = PI9
+TWI2_SCL = PI9
 PI10 = Pin((__chip_num, 266))
 UART3_RX = PI10
+TWI2_SDA = PI10
 PI11 = Pin((__chip_num, 267))
 PI12 = Pin((__chip_num, 268))
 PWM2 = PI12
@@ -139,6 +141,7 @@ PI16 = Pin((__chip_num, 272))
 i2cPorts = (
     (0, TWI0_SCL, TWI0_SDA),
     (1, TWI1_SCL, TWI1_SDA),
+    (2, TWI2_SCL, TWI2_SDA),
     (3, TWI3_SCL, TWI3_SDA),
     (4, TWI4_SCL, TWI4_SDA),
 )
